@@ -1,0 +1,217 @@
+2015/10/07 05:05:40 [warning] [application] Error al definir unsafe el atributo "layout" de "AweCrudCode".
+in C:\Users\CRISTHIAN\Documents\Proyectos\globo_smart_tech\index.php (13)
+2015/10/07 05:05:51 [warning] [application] Error al definir unsafe el atributo "layout" de "AweCrudCode".
+in C:\Users\CRISTHIAN\Documents\Proyectos\globo_smart_tech\index.php (13)
+2015/10/07 05:06:16 [warning] [application] Error al definir unsafe el atributo "layout" de "AweCrudCode".
+in C:\Users\CRISTHIAN\Documents\Proyectos\globo_smart_tech\index.php (13)
+2015/10/07 05:06:25 [warning] [application] Error al definir unsafe el atributo "layout" de "AweCrudCode".
+in C:\Users\CRISTHIAN\Documents\Proyectos\globo_smart_tech\index.php (13)
+2015/10/07 05:06:54 [warning] [application] Error al definir unsafe el atributo "layout" de "AweCrudCode".
+in C:\Users\CRISTHIAN\Documents\Proyectos\globo_smart_tech\index.php (13)
+2015/10/07 05:07:03 [warning] [application] Error al definir unsafe el atributo "layout" de "AweCrudCode".
+in C:\Users\CRISTHIAN\Documents\Proyectos\globo_smart_tech\index.php (13)
+2015/10/07 05:07:27 [warning] [application] Error al definir unsafe el atributo "layout" de "AweCrudCode".
+in C:\Users\CRISTHIAN\Documents\Proyectos\globo_smart_tech\index.php (13)
+2015/10/07 05:07:40 [warning] [application] Error al definir unsafe el atributo "layout" de "AweCrudCode".
+in C:\Users\CRISTHIAN\Documents\Proyectos\globo_smart_tech\index.php (13)
+2015/10/07 05:08:04 [warning] [application] Error al definir unsafe el atributo "layout" de "AweCrudCode".
+in C:\Users\CRISTHIAN\Documents\Proyectos\globo_smart_tech\index.php (13)
+2015/10/07 05:08:16 [warning] [application] Error al definir unsafe el atributo "layout" de "AweCrudCode".
+in C:\Users\CRISTHIAN\Documents\Proyectos\globo_smart_tech\index.php (13)
+2015/10/07 05:18:23 [warning] [application] Error al definir unsafe el atributo "layout" de "AweCrudCode".
+in C:\Users\CRISTHIAN\Documents\Proyectos\globo_smart_tech\index.php (13)
+2015/10/07 05:18:36 [warning] [application] Error al definir unsafe el atributo "layout" de "AweCrudCode".
+in C:\Users\CRISTHIAN\Documents\Proyectos\globo_smart_tech\index.php (13)
+2015/10/07 16:56:47 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)' in /Users/joaquinmolina/Documents/Proyectos/Yii/framework/db/CDbConnection.php:381
+Stack trace:
+#0 /Users/joaquinmolina/Documents/Proyectos/Yii/framework/db/CDbConnection.php(330): CDbConnection->open()
+#1 /Users/joaquinmolina/Documents/Proyectos/Yii/framework/db/CDbConnection.php(308): CDbConnection->setActive(true)
+#2 /Users/joaquinmolina/Documents/Proyectos/Yii/framework/base/CModule.php(387): CDbConnection->init()
+#3 /Users/joaquinmolina/Documents/Proyectos/Yii/framework/base/CApplication.php(438): CModule->getComponent('db')
+#4 /Users/joaquinmolina/Documents/Proyectos/Yii/framework/db/ar/CActiveRecord.php(623): CApplication->getDb()
+#5 /Users/joaquinmolina/Documents/Proyectos/Yii/framework/db/ar/CActiveRecord.php(2309): CActiveRecord->getDbConnection()
+#6 /Users/joaquinmolina/Documents/Proyectos/Yii/framework/db/ar/CActiveRecord.php(387): CActiveRecordMetaData->__construct(Object(Admin))
+#7 /Users/joaquinmolina/Documents/Proyectos/Yii/framework/db/ar/CActiveRecord.php(402): CActiveRecord::model('Admin')
+#8 /Users/joaquinmolina/Documents/Proyectos/Yii/framework/db/ar/CActiveRecord.php(77): CActiveRecord->getMetaData()
+#9 /Users/joaquinmolina/Documents/Proyectos/globo_smart_tech/protected/controllers/AdminController.php(107): CActiveRecord->__construct('search')
+#10 /Users/joaquinmolina/Documents/Proyectos/Yii/framework/web/actions/CInlineAction.php(49): AdminController->actionAdmin()
+#11 /Users/joaquinmolina/Documents/Proyectos/Yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#12 /Users/joaquinmolina/Documents/Proyectos/Yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#13 /Users/joaquinmolina/Documents/Proyectos/Yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 /Users/joaquinmolina/Documents/Proyectos/Yii/framework/web/CWebApplication.php(282): CController->run('')
+#15 /Users/joaquinmolina/Documents/Proyectos/Yii/framework/web/CWebApplication.php(141): CWebApplication->runController('admin')
+#16 /Users/joaquinmolina/Documents/Proyectos/Yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#17 /Users/joaquinmolina/Documents/Proyectos/globo_smart_tech/index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/globo_smart_tech/index.php?r=admin
+HTTP_REFERER=http://localhost/globo_smart_tech/index.php
+---
+2015/10/07 16:57:43 [error] [system.db.CDbCommand] CDbCommand::fetchAll() falló: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'globo.smartphone' doesn't exist. La sentencia SQL ejecutada fue: SHOW FULL COLUMNS FROM `smartphone`.
+in /Users/joaquinmolina/Documents/Proyectos/globo_smart_tech/protected/controllers/SmartphoneController.php (107)
+in /Users/joaquinmolina/Documents/Proyectos/globo_smart_tech/index.php (13)
+2015/10/07 16:57:43 [error] [exception.CDbException] exception 'CDbException' with message 'La tabla "smartphone" definida en la clase active record "Smartphone" no se ha podido encontrar en la base de datos.' in /Users/joaquinmolina/Documents/Proyectos/Yii/framework/db/ar/CActiveRecord.php:2310
+Stack trace:
+#0 /Users/joaquinmolina/Documents/Proyectos/Yii/framework/db/ar/CActiveRecord.php(387): CActiveRecordMetaData->__construct(Object(Smartphone))
+#1 /Users/joaquinmolina/Documents/Proyectos/Yii/framework/db/ar/CActiveRecord.php(402): CActiveRecord::model('Smartphone')
+#2 /Users/joaquinmolina/Documents/Proyectos/Yii/framework/db/ar/CActiveRecord.php(77): CActiveRecord->getMetaData()
+#3 /Users/joaquinmolina/Documents/Proyectos/globo_smart_tech/protected/controllers/SmartphoneController.php(107): CActiveRecord->__construct('search')
+#4 /Users/joaquinmolina/Documents/Proyectos/Yii/framework/web/actions/CInlineAction.php(49): SmartphoneController->actionAdmin()
+#5 /Users/joaquinmolina/Documents/Proyectos/Yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#6 /Users/joaquinmolina/Documents/Proyectos/Yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#7 /Users/joaquinmolina/Documents/Proyectos/Yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /Users/joaquinmolina/Documents/Proyectos/Yii/framework/web/CWebApplication.php(282): CController->run('')
+#9 /Users/joaquinmolina/Documents/Proyectos/Yii/framework/web/CWebApplication.php(141): CWebApplication->runController('smartphone')
+#10 /Users/joaquinmolina/Documents/Proyectos/Yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#11 /Users/joaquinmolina/Documents/Proyectos/globo_smart_tech/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/globo_smart_tech/index.php?r=smartphone
+HTTP_REFERER=http://localhost/globo_smart_tech/index.php?r=pedido
+---
+2015/10/07 16:57:46 [error] [system.db.CDbCommand] CDbCommand::fetchAll() falló: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'globo.tablet' doesn't exist. La sentencia SQL ejecutada fue: SHOW FULL COLUMNS FROM `tablet`.
+in /Users/joaquinmolina/Documents/Proyectos/globo_smart_tech/protected/controllers/TabletController.php (107)
+in /Users/joaquinmolina/Documents/Proyectos/globo_smart_tech/index.php (13)
+2015/10/07 16:57:46 [error] [exception.CDbException] exception 'CDbException' with message 'La tabla "tablet" definida en la clase active record "Tablet" no se ha podido encontrar en la base de datos.' in /Users/joaquinmolina/Documents/Proyectos/Yii/framework/db/ar/CActiveRecord.php:2310
+Stack trace:
+#0 /Users/joaquinmolina/Documents/Proyectos/Yii/framework/db/ar/CActiveRecord.php(387): CActiveRecordMetaData->__construct(Object(Tablet))
+#1 /Users/joaquinmolina/Documents/Proyectos/Yii/framework/db/ar/CActiveRecord.php(402): CActiveRecord::model('Tablet')
+#2 /Users/joaquinmolina/Documents/Proyectos/Yii/framework/db/ar/CActiveRecord.php(77): CActiveRecord->getMetaData()
+#3 /Users/joaquinmolina/Documents/Proyectos/globo_smart_tech/protected/controllers/TabletController.php(107): CActiveRecord->__construct('search')
+#4 /Users/joaquinmolina/Documents/Proyectos/Yii/framework/web/actions/CInlineAction.php(49): TabletController->actionAdmin()
+#5 /Users/joaquinmolina/Documents/Proyectos/Yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#6 /Users/joaquinmolina/Documents/Proyectos/Yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#7 /Users/joaquinmolina/Documents/Proyectos/Yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /Users/joaquinmolina/Documents/Proyectos/Yii/framework/web/CWebApplication.php(282): CController->run('')
+#9 /Users/joaquinmolina/Documents/Proyectos/Yii/framework/web/CWebApplication.php(141): CWebApplication->runController('tablet')
+#10 /Users/joaquinmolina/Documents/Proyectos/Yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#11 /Users/joaquinmolina/Documents/Proyectos/globo_smart_tech/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/globo_smart_tech/index.php?r=tablet
+HTTP_REFERER=http://localhost/globo_smart_tech/index.php?r=pedido
+---
+2015/10/07 17:07:07 [error] [system.db.CDbCommand] CDbCommand::fetchAll() falló: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'globo.tablet' doesn't exist. La sentencia SQL ejecutada fue: SHOW FULL COLUMNS FROM `tablet`.
+in /Users/joaquinmolina/Documents/Proyectos/globo_smart_tech/protected/controllers/TabletController.php (107)
+in /Users/joaquinmolina/Documents/Proyectos/globo_smart_tech/index.php (13)
+2015/10/07 17:07:07 [error] [exception.CDbException] exception 'CDbException' with message 'La tabla "tablet" definida en la clase active record "Tablet" no se ha podido encontrar en la base de datos.' in /Users/joaquinmolina/Documents/Proyectos/Yii/framework/db/ar/CActiveRecord.php:2310
+Stack trace:
+#0 /Users/joaquinmolina/Documents/Proyectos/Yii/framework/db/ar/CActiveRecord.php(387): CActiveRecordMetaData->__construct(Object(Tablet))
+#1 /Users/joaquinmolina/Documents/Proyectos/Yii/framework/db/ar/CActiveRecord.php(402): CActiveRecord::model('Tablet')
+#2 /Users/joaquinmolina/Documents/Proyectos/Yii/framework/db/ar/CActiveRecord.php(77): CActiveRecord->getMetaData()
+#3 /Users/joaquinmolina/Documents/Proyectos/globo_smart_tech/protected/controllers/TabletController.php(107): CActiveRecord->__construct('search')
+#4 /Users/joaquinmolina/Documents/Proyectos/Yii/framework/web/actions/CInlineAction.php(49): TabletController->actionAdmin()
+#5 /Users/joaquinmolina/Documents/Proyectos/Yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#6 /Users/joaquinmolina/Documents/Proyectos/Yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#7 /Users/joaquinmolina/Documents/Proyectos/Yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /Users/joaquinmolina/Documents/Proyectos/Yii/framework/web/CWebApplication.php(282): CController->run('')
+#9 /Users/joaquinmolina/Documents/Proyectos/Yii/framework/web/CWebApplication.php(141): CWebApplication->runController('tablet')
+#10 /Users/joaquinmolina/Documents/Proyectos/Yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#11 /Users/joaquinmolina/Documents/Proyectos/globo_smart_tech/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/globo_smart_tech/index.php?r=tablet
+HTTP_REFERER=http://localhost/globo_smart_tech/index.php?r=smartphone
+---
+2015/10/07 17:38:12 [error] [system.db.CDbCommand] CDbCommand::fetchAll() falló: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'globo.tablet' doesn't exist. La sentencia SQL ejecutada fue: SHOW FULL COLUMNS FROM `tablet`.
+in /Users/joaquinmolina/Documents/Proyectos/globo_smart_tech/protected/controllers/TabletController.php (140)
+in /Users/joaquinmolina/Documents/Proyectos/globo_smart_tech/index.php (13)
+2015/10/07 17:38:12 [error] [exception.CDbException] exception 'CDbException' with message 'La tabla "tablet" definida en la clase active record "Tablet" no se ha podido encontrar en la base de datos.' in /Users/joaquinmolina/Documents/Proyectos/Yii/framework/db/ar/CActiveRecord.php:2310
+Stack trace:
+#0 /Users/joaquinmolina/Documents/Proyectos/Yii/framework/db/ar/CActiveRecord.php(387): CActiveRecordMetaData->__construct(Object(Tablet))
+#1 /Users/joaquinmolina/Documents/Proyectos/Yii/framework/db/ar/CActiveRecord.php(402): CActiveRecord::model('Tablet')
+#2 /Users/joaquinmolina/Documents/Proyectos/Yii/framework/db/ar/CActiveRecord.php(77): CActiveRecord->getMetaData()
+#3 /Users/joaquinmolina/Documents/Proyectos/globo_smart_tech/protected/controllers/TabletController.php(140): CActiveRecord->__construct('search')
+#4 /Users/joaquinmolina/Documents/Proyectos/Yii/framework/web/actions/CInlineAction.php(49): TabletController->actionAdmin()
+#5 /Users/joaquinmolina/Documents/Proyectos/Yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#6 /Users/joaquinmolina/Documents/Proyectos/Yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#7 /Users/joaquinmolina/Documents/Proyectos/Yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#8 /Users/joaquinmolina/Documents/Proyectos/Yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#9 /Users/joaquinmolina/Documents/Proyectos/Yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#10 /Users/joaquinmolina/Documents/Proyectos/Yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#11 /Users/joaquinmolina/Documents/Proyectos/Yii/framework/web/CController.php(291): CFilterChain->run()
+#12 /Users/joaquinmolina/Documents/Proyectos/Yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /Users/joaquinmolina/Documents/Proyectos/Yii/framework/web/CWebApplication.php(282): CController->run('')
+#14 /Users/joaquinmolina/Documents/Proyectos/Yii/framework/web/CWebApplication.php(141): CWebApplication->runController('tablet')
+#15 /Users/joaquinmolina/Documents/Proyectos/Yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#16 /Users/joaquinmolina/Documents/Proyectos/globo_smart_tech/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/globo_smart_tech/index.php?r=tablet
+HTTP_REFERER=http://localhost/globo_smart_tech/index.php?r=smartphone
+---
+2015/10/07 17:41:42 [error] [system.db.CDbCommand] CDbCommand::fetchAll() falló: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'globo.tablet' doesn't exist. La sentencia SQL ejecutada fue: SHOW FULL COLUMNS FROM `tablet`.
+in /Users/joaquinmolina/Documents/Proyectos/globo_smart_tech/protected/controllers/TabletController.php (140)
+in /Users/joaquinmolina/Documents/Proyectos/globo_smart_tech/index.php (13)
+2015/10/07 17:41:42 [error] [exception.CDbException] exception 'CDbException' with message 'La tabla "tablet" definida en la clase active record "Tablet" no se ha podido encontrar en la base de datos.' in /Users/joaquinmolina/Documents/Proyectos/Yii/framework/db/ar/CActiveRecord.php:2310
+Stack trace:
+#0 /Users/joaquinmolina/Documents/Proyectos/Yii/framework/db/ar/CActiveRecord.php(387): CActiveRecordMetaData->__construct(Object(Tablet))
+#1 /Users/joaquinmolina/Documents/Proyectos/Yii/framework/db/ar/CActiveRecord.php(402): CActiveRecord::model('Tablet')
+#2 /Users/joaquinmolina/Documents/Proyectos/Yii/framework/db/ar/CActiveRecord.php(77): CActiveRecord->getMetaData()
+#3 /Users/joaquinmolina/Documents/Proyectos/globo_smart_tech/protected/controllers/TabletController.php(140): CActiveRecord->__construct('search')
+#4 /Users/joaquinmolina/Documents/Proyectos/Yii/framework/web/actions/CInlineAction.php(49): TabletController->actionAdmin()
+#5 /Users/joaquinmolina/Documents/Proyectos/Yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#6 /Users/joaquinmolina/Documents/Proyectos/Yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#7 /Users/joaquinmolina/Documents/Proyectos/Yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#8 /Users/joaquinmolina/Documents/Proyectos/Yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#9 /Users/joaquinmolina/Documents/Proyectos/Yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#10 /Users/joaquinmolina/Documents/Proyectos/Yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#11 /Users/joaquinmolina/Documents/Proyectos/Yii/framework/web/CController.php(291): CFilterChain->run()
+#12 /Users/joaquinmolina/Documents/Proyectos/Yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /Users/joaquinmolina/Documents/Proyectos/Yii/framework/web/CWebApplication.php(282): CController->run('')
+#14 /Users/joaquinmolina/Documents/Proyectos/Yii/framework/web/CWebApplication.php(141): CWebApplication->runController('tablet')
+#15 /Users/joaquinmolina/Documents/Proyectos/Yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#16 /Users/joaquinmolina/Documents/Proyectos/globo_smart_tech/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/globo_smart_tech/index.php?r=tablet
+HTTP_REFERER=http://localhost/globo_smart_tech/index.php?r=smartphone
+---
+2015/10/07 17:49:18 [error] [php] Undefined variable: file_imagen (/Users/joaquinmolina/Documents/Proyectos/globo_smart_tech/protected/controllers/BannerController.php:91)
+Stack trace:
+#0 /Users/joaquinmolina/Documents/Proyectos/Yii/framework/web/filters/CFilterChain.php(133): BannerController->runAction()
+#1 /Users/joaquinmolina/Documents/Proyectos/Yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#2 /Users/joaquinmolina/Documents/Proyectos/Yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#3 /Users/joaquinmolina/Documents/Proyectos/Yii/framework/web/filters/CInlineFilter.php(58): BannerController->filterAccessControl()
+#4 /Users/joaquinmolina/Documents/Proyectos/Yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#5 /Users/joaquinmolina/Documents/Proyectos/Yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /Users/joaquinmolina/Documents/Proyectos/Yii/framework/web/CController.php(265): BannerController->runActionWithFilters()
+#7 /Users/joaquinmolina/Documents/Proyectos/Yii/framework/web/CWebApplication.php(282): BannerController->run()
+#8 /Users/joaquinmolina/Documents/Proyectos/Yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /Users/joaquinmolina/Documents/Proyectos/Yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /Users/joaquinmolina/Documents/Proyectos/globo_smart_tech/index.php(13): CWebApplication->run()
+REQUEST_URI=/globo_smart_tech/index.php?r=banner/create
+in /Users/joaquinmolina/Documents/Proyectos/globo_smart_tech/protected/controllers/BannerController.php (91)
+in /Users/joaquinmolina/Documents/Proyectos/globo_smart_tech/index.php (13)
+2015/10/07 17:53:55 [error] [php] Undefined variable: file_imegen1 (/Users/joaquinmolina/Documents/Proyectos/globo_smart_tech/protected/controllers/BannerController.php:74)
+Stack trace:
+#0 /Users/joaquinmolina/Documents/Proyectos/Yii/framework/web/filters/CFilterChain.php(133): BannerController->runAction()
+#1 /Users/joaquinmolina/Documents/Proyectos/Yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#2 /Users/joaquinmolina/Documents/Proyectos/Yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#3 /Users/joaquinmolina/Documents/Proyectos/Yii/framework/web/filters/CInlineFilter.php(58): BannerController->filterAccessControl()
+#4 /Users/joaquinmolina/Documents/Proyectos/Yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#5 /Users/joaquinmolina/Documents/Proyectos/Yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /Users/joaquinmolina/Documents/Proyectos/Yii/framework/web/CController.php(265): BannerController->runActionWithFilters()
+#7 /Users/joaquinmolina/Documents/Proyectos/Yii/framework/web/CWebApplication.php(282): BannerController->run()
+#8 /Users/joaquinmolina/Documents/Proyectos/Yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /Users/joaquinmolina/Documents/Proyectos/Yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /Users/joaquinmolina/Documents/Proyectos/globo_smart_tech/index.php(13): CWebApplication->run()
+REQUEST_URI=/globo_smart_tech/index.php?r=banner/create
+in /Users/joaquinmolina/Documents/Proyectos/globo_smart_tech/protected/controllers/BannerController.php (74)
+in /Users/joaquinmolina/Documents/Proyectos/globo_smart_tech/index.php (13)
+2015/10/07 18:07:56 [error] [php] Undefined index: ImagenBanner (/Users/joaquinmolina/Documents/Proyectos/globo_smart_tech/protected/controllers/BannerController.php:120)
+Stack trace:
+#0 /Users/joaquinmolina/Documents/Proyectos/Yii/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#1 /Users/joaquinmolina/Documents/Proyectos/Yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#2 /Users/joaquinmolina/Documents/Proyectos/Yii/framework/web/filters/CFilterChain.php(133): BannerController->runAction()
+#3 /Users/joaquinmolina/Documents/Proyectos/Yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#4 /Users/joaquinmolina/Documents/Proyectos/Yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#5 /Users/joaquinmolina/Documents/Proyectos/Yii/framework/web/filters/CInlineFilter.php(58): BannerController->filterAccessControl()
+#6 /Users/joaquinmolina/Documents/Proyectos/Yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#7 /Users/joaquinmolina/Documents/Proyectos/Yii/framework/web/CController.php(291): CFilterChain->run()
+#8 /Users/joaquinmolina/Documents/Proyectos/Yii/framework/web/CController.php(265): BannerController->runActionWithFilters()
+#9 /Users/joaquinmolina/Documents/Proyectos/Yii/framework/web/CWebApplication.php(282): BannerController->run()
+#10 /Users/joaquinmolina/Documents/Proyectos/Yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#11 /Users/joaquinmolina/Documents/Proyectos/Yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#12 /Users/joaquinmolina/Documents/Proyectos/globo_smart_tech/index.php(13): CWebApplication->run()
+REQUEST_URI=/globo_smart_tech/index.php?r=banner/update&id=1
+in /Users/joaquinmolina/Documents/Proyectos/globo_smart_tech/protected/controllers/BannerController.php (120)
+in /Users/joaquinmolina/Documents/Proyectos/globo_smart_tech/index.php (13)
+2015/10/07 18:33:44 [warning] [application] Error al definir unsafe el atributo "layout" de "AweCrudCode".
+in /Users/joaquinmolina/Documents/Proyectos/globo_smart_tech/index.php (13)
+2015/10/07 18:33:47 [warning] [application] Error al definir unsafe el atributo "layout" de "AweCrudCode".
+in /Users/joaquinmolina/Documents/Proyectos/globo_smart_tech/index.php (13)
